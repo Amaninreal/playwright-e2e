@@ -1,5 +1,4 @@
 import test, { expect } from "../base_common/fixtures/baseTest"
-import { locators } from "../page-objects/LoginPage/LoginPageLocators";
 import { testData } from "./testData";
 
 test.describe('E2E test flows', () => {
