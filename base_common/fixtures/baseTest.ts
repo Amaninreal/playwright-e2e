@@ -1,5 +1,5 @@
 import { LoginPage } from "../../page-objects/LoginPage/LoginPage";
-import { Page, test as baseTest } from "@playwright/test";
+import { test as baseTest } from "@playwright/test";
 import { CommonPage } from "../common/CommonPage";
 import { CommonScenario } from "../common/CommonScenario";
 // declaring the objects type for autocompletion 

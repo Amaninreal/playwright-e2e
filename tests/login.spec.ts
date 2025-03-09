@@ -3,9 +3,10 @@ import { testData } from "./testData";
 
 test.describe('E2E test flows', () => {
 
-  test("Product Checkout", async ({page, loginPage}, testinfo) => {
+  test("Login with Valid Credentials", async ({page, loginPage}, testinfo) => {
     await loginPage.goTo();
     await loginPage.validLogin(testData.username, testData.password);
+    await expect
     await page.pause();
   });
 })

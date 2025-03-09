@@ -1,5 +1,4 @@
-import AxeBuilder from "@axe-core/playwright";
-import { expect, Page, } from "@playwright/test";
+import { Page, } from "@playwright/test";
 import { CommonPage } from "../../base_common/common/CommonPage";
 import { CommonScenario } from "../../base_common/common/CommonScenario";
 import { testData } from "../../tests/testData";
