@@ -5,6 +5,7 @@ import { testData } from "../../tests/testData";
 import { locators } from "../LoginPage/LoginPageLocators";
 
 export class LoginPage extends CommonPage {
+  private dashboard = "[data-test='inventory-container']";
 
   constructor(public page: Page, readonly scenario: CommonScenario) {
     super(page, scenario);
@@ -20,5 +21,9 @@ export class LoginPage extends CommonPage {
     await this.page.locator(locators.password).fill(password);
     await this.page.locator(locators.loginButton).click();
     await this.page.waitForLoadState("networkidle");
+  }
+
+  async isDashboardVisible() {
+    return this.page.locator(this.dashboard);
   }
 }
