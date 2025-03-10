@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export const locators = {
     userName: "#user-name",
     password: "#password",

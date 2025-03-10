@@ -13,5 +13,6 @@ test.describe('E2E test flows', () => {
 
     // Click on the Twitter icon
     await loginPage.clickTwitterIcon();
+    await page.pause();
   });
 })
