@@ -8,7 +8,7 @@ interface PageObjects {
     commonScenarioPage: CommonScenario;
     commonPage: CommonPage,
 }
-// intializing all the page objects you have in your app
+// intializing all the page objects
 // and import them as fixture in spec file
 const test = baseTest.extend<PageObjects>({
     commonScenarioPage: async ({ page }, use, testinfo) => {
@@ -19,13 +19,6 @@ const test = baseTest.extend<PageObjects>({
     },
 
 });
-// this describe block is applicable to all the tests using baseTest
-// test.describe('two tests', () => {
-//     console.log("in describe");
-
-// });
-// hooks as fixtures
-// let authenticatedPage: Page;
 test.beforeEach(async ({ browser }) => {
    // console.log('beforeEach tests');
 });

@@ -26,4 +26,14 @@ export class LoginPage extends CommonPage {
   async isDashboardVisible() {
     return this.page.locator(this.dashboard);
   }
+  async getTitleLocator() {
+    return this.page.locator(locators.title);
+}
+
+async clickTwitterIcon() {
+    const twitterIcon = this.page.locator(locators.twitterIcon);
+    await twitterIcon.scrollIntoViewIfNeeded();
+    await twitterIcon.click();
+}
+
 }
